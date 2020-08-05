@@ -21,9 +21,9 @@ class App extends React.Component {
       title: 'Ammar Fatehi',
       headerLinks: [
         {title: 'Home', path: '/web'},
-        {title: 'About', path: '/about'},
-        {title: 'Coursework', path: '/coursework'},
-        {title: 'Resume', path: '/resume'}
+        {title: 'About', path: '/web/about'},
+        {title: 'Coursework', path: '/web/coursework'},
+        {title: 'Resume', path: '/web/resume'}
       ],
       home: {
         title: 'Welcome',
@@ -54,17 +54,17 @@ class App extends React.Component {
             <Navbar.Collapse id="navbar-toggle">
               <Nav className = 'ml-auto'>
                <Link className = "nav-link" to = "/web">Home</Link>
-               <Link className = "nav-link" to = "/about">About</Link>
-               <Link className = "nav-link" to = "/coursework">Coursework</Link>
-               <Link className = "nav-link" to = "/resume">Resume</Link>
+               <Link className = "nav-link" to = "/web/about">About</Link>
+               <Link className = "nav-link" to = "/web/coursework">Coursework</Link>
+               <Link className = "nav-link" to = "/web/resume">Resume</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
           
           <Route path = "/web" exact render = {() => <HomePage title = {this.state.home.title} subTitle = {this.state.home.subTitle} text = {this.state.home.text}/>} />
-          <Route path = "/about" render = {() => <ProjectPage title = {this.state.about.title} />} />
-          <Route path = "/coursework" render = {() => <CourseworkPage title = {this.state.coursework.title} />} />
-          <Route path = "/resume" render = {() => <ResumePage title = {this.state.resume.title} />} />
+          <Route path = "/web/about" render = {() => <ProjectPage title = {this.state.about.title} />} />
+          <Route path = "/web/coursework" render = {() => <CourseworkPage title = {this.state.coursework.title} />} />
+          <Route path = "/web/resume" render = {() => <ResumePage title = {this.state.resume.title} />} />
 
           <Footer />
 
