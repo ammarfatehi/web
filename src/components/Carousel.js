@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import discord_icon from '../assets/images/discord_icon.png';
 import space_invaders_icon from '../assets/images/space_invaders_icon.png';
 import alpaca_icon from '../assets/images/alpaca_icon.jpg';
+import a_star_icon from '../assets/images/a_star_icon.png';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -41,6 +42,14 @@ class Carousel extends React.Component {
                     link: 'https://github.com/ammarfatehi/Trading-Bot',
                     selected: false
                 },
+                {
+                    id: 3,
+                    title: 'A* Path Finding Visualizer',
+                    subTitle: 'An interactive GUI to demostrate the A* algorithm',
+                    imgSrc: a_star_icon,
+                    link: 'https://github.com/ammarfatehi/A-star-Visualizer',
+                    selected: false
+                }
             ]
 
         }
