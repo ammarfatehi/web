@@ -32,7 +32,7 @@ nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
         li.nav-item.mx-0.mx-lg-1
           a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#contact') Contact
         li.nav-item.mx-0.mx-lg-1
-          a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='https://github.com/ammarfatehi/Resume/blob/main/Fatehi_Ammar_Resume_2021.pdf') Resume
+          a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='https://github.com/ammarfatehi/Resume/blob/main/Fatehi_Ammar_Resume_2021.pdf' target='_blank') Resume
 // Masthead
 header.masthead.bg-primary.text-white.text-center
   .container.d-flex.align-items-center.flex-column
@@ -124,7 +124,7 @@ section#skills
           i.fa.fa-4x.fa-server.wow.bounceIn.text-primary(data-wow-delay='.1s')
           h3 Back-End
           ul
-            li.col-md-9 Flask 
+            li.col-md-9 Flask
             li.col-md-9 Node.js
             li.col-md-9 AWS
       .col-lg-3.col-md-6.text-center
@@ -213,13 +213,13 @@ footer.footer.text-center
       // Footer Social Icons
       .col-lg-4.mb-5.mb-lg-0
         h4.text-uppercase.mb-4 find me @
-        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.linkedin.com/in/ammarfatehi/')
+        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.linkedin.com/in/ammarfatehi/' target='_blank')
           i.fab.fa-fw.fa-linkedin-in
-        a.btn.btn-outline-light.btn-social.mx-1(href='https://mail.google.com/mail/?view=cm&fs=1&to=ammarfatehi@utexas.edu')
+        a.btn.btn-outline-light.btn-social.mx-1(href='https://mail.google.com/mail/?view=cm&fs=1&to=ammarfatehi@utexas.edu' target='_blank')
           i.fa.fa-envelope
-        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/ammarfatehi')
+        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/ammarfatehi' target='_blank')
           i.fab.fa-fw.fa-github
-        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.instagram.com/12_ammar_12/')
+        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.instagram.com/12_ammar_12/' target='_blank')
           i.fab.fa-fw.fa-instagram
       // Footer About Text
 // Copyright Section
@@ -251,13 +251,14 @@ footer.footer.text-center
                   i.fas.fa-star
                 .divider-custom-line
               // Portfolio Modal - Image
-              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/nutriapp.png' alt='' href='https://devpost.com/software/nutriapp')
+              a(href='https://devpost.com/software/nutriapp' target='_blank')
+                img.img-fluid.rounded.mb-5(src='assets/img/portfolio/nutriapp.png' alt='' href='https://devpost.com/software/nutriapp')
               // Portfolio Modal - Text
               p.mb-5
                 | An app that lets the user simply take a picture of the drug facts on the back of their food and reads the ingredients and scrapes the internet for information about them. Which is then displayed in a user-friendly manner.
               button.btn.btn-primary(data-dismiss='modal')
                 i.fas.fa-times.fa-fw
-                |                                         Close Window
+                |                                 Close Window
 // Portfolio Modal 2
 #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal2Label' aria-hidden='true')
   .modal-dialog.modal-xl(role='document')
@@ -278,12 +279,13 @@ footer.footer.text-center
                   i.fas.fa-star
                 .divider-custom-line
               // Portfolio Modal - Image
-              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/aplacabrokerage.png' alt='')
+              a(href='https://github.com/ammarfatehi/Trading-Bot' target='_blank')
+                img.img-fluid.rounded.mb-5(src='assets/img/portfolio/aplacabrokerage.png' alt='')
               // Portfolio Modal - Text
               p.mb-5 A trading bot that paper trades on Alpaca Brokerage.
               button.btn.btn-primary(data-dismiss='modal')
                 i.fas.fa-times.fa-fw
-                |                                         Close Window
+                |                                 Close Window
 // Portfolio Modal 3
 #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal3Label' aria-hidden='true')
   .modal-dialog.modal-xl(role='document')
@@ -304,12 +306,13 @@ footer.footer.text-center
                   i.fas.fa-star
                 .divider-custom-line
               // Portfolio Modal - Image
-              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/brokerage.png' alt='')
+              a(href='https://github.com/ammarfatehi/trading-brokerage' target='_blank')
+                img.img-fluid.rounded.mb-5(src='assets/img/portfolio/brokerage.png' alt='')
               // Portfolio Modal - Text
               p.mb-5 A REST API for an Algo trading competition.
               button.btn.btn-primary(data-dismiss='modal')
                 i.fas.fa-times.fa-fw
-                |                                         Close Window
+                |                                 Close Window
 // Portfolio Modal 4
 #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal4Label' aria-hidden='true')
   .modal-dialog.modal-xl(role='document')
@@ -330,12 +333,13 @@ footer.footer.text-center
                   i.fas.fa-star
                 .divider-custom-line
               // Portfolio Modal - Image
-              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/astarpathfing.png' alt='')
+              a(href='https://github.com/ammarfatehi/A-star-Visualizer' target='_blank')
+                img.img-fluid.rounded.mb-5(src='assets/img/portfolio/astarpathfing.png' alt='')
               // Portfolio Modal - Text
-              p.mb-5 An interactive GUI meant to help users visualize the A* path finding algorithm. 
+              p.mb-5 An interactive GUI meant to help users visualize the A* path finding algorithm.
               button.btn.btn-primary(data-dismiss='modal')
                 i.fas.fa-times.fa-fw
-                |                                         Close Window
+                |                                 Close Window
 // Portfolio Modal 5
 #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal5Label' aria-hidden='true')
   .modal-dialog.modal-xl(role='document')
@@ -356,13 +360,14 @@ footer.footer.text-center
                   i.fas.fa-star
                 .divider-custom-line
               // Portfolio Modal - Image
-              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/spaceinvader.png' alt='')
+              a(href='https://github.com/ammarfatehi/Space-Invaders-TM4C' target='_blank')
+                img.img-fluid.rounded.mb-5(src='assets/img/portfolio/spaceinvader.png' alt='')
               // Portfolio Modal - Text
               p.mb-5
                 | Recreated the class game Space Invaders from almost scratch. Wrote the code and created the circuit in order to play and run all aspects of the game such as the lcd, sound, slide bar, and buttons. Wrote the drivers for each of components for the game in C and ARM Asembly.
               button.btn.btn-primary(data-dismiss='modal')
                 i.fas.fa-times.fa-fw
-                |                                         Close Window
+                |                                 Close Window
 // Portfolio Modal 6
 #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='portfolioModal6Label' aria-hidden='true')
   .modal-dialog.modal-xl(role='document')
@@ -383,13 +388,14 @@ footer.footer.text-center
                   i.fas.fa-star
                 .divider-custom-line
               // Portfolio Modal - Image
-              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/discordbot.png' alt='')
+              a(href='https://github.com/ammarfatehi/Discord-Bot' target='_blank')
+                img.img-fluid.rounded.mb-5(src='assets/img/portfolio/discordbot.png' alt='')
               // Portfolio Modal - Text
               p.mb-5
                 | A discord bot that allows the user to play music from YouTube and Spotify. Also has other commands to automate parts of handling a Discord Server.
               button.btn.btn-primary(data-dismiss='modal')
                 i.fas.fa-times.fa-fw
-                |                                         Close Window
+                |                                 Close Window
 // Bootstrap core JS
 script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js')
