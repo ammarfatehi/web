@@ -14,6 +14,7 @@ head
   link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css')
   // Core theme CSS (includes Bootstrap)
   link(href='css/styles.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css')
 // Navigation
 nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
   .container
@@ -105,43 +106,59 @@ section#portfolio.page-section.portfolio
           img.img-fluid(src='assets/img/portfolio/discordbot.png' alt='')
 section#skills
   .container
-    .row
-      .col-lg-12.text-center
-        h2.section-heading Skills
-        hr.primary
+    h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Skills
+    // Icon Divider
+    .divider-custom
+      .divider-custom-line
+      .divider-custom-icon
+        i.fas.fa-star
+      .divider-custom-line
   .container
     .row
       .col-lg-3.col-md-6.text-center
         .service-box
           i.fa.fa-4x.fa-laptop.wow.bounceIn.text-primary
           h3 Front-End
-          ul
-            li.col-md-9 JavaScript
-            li.col-md-9 CSS
-            li.col-md-9 HTML
+          ul(style='list-style-type: none')
+            li
+              i.devicon-javascript-plain.colored(style='font-size: 50px; position: relative; left: -25px')
+            li
+              i.devicon-css3-plain-wordmark.colored(style='font-size: 55px; position: relative; left: -25px')
+            li
+              i.devicon-html5-plain-wordmark.colored(style='font-size: 55px; position: relative; left: -25px')
       .col-lg-3.col-md-6.text-center
         .service-box
           i.fa.fa-4x.fa-server.wow.bounceIn.text-primary(data-wow-delay='.1s')
           h3 Back-End
-          ul
-            li.col-md-9 Flask
-            li.col-md-9 Node.js
-            li.col-md-9 AWS
+          ul(style='list-style-type: none')
+            li
+              i.devicon-flask-plain-wordmark.colored(style='font-size: 70px; position: relative; left: -25px')
+            li
+              i.devicon-nodejs-plain-wordmark.colored(style='font-size: 70px; position: relative; left: -25px; top: -20px')
+            li
+              i.devicon-amazonwebservices-plain-wordmark.colored(style='font-size: 70px; position: relative; left: -25px; top: -40px')
       .col-lg-3.col-md-6.text-center
         .service-box
           i.fa.fa-4x.fa-database.wow.bounceIn.text-primary(data-wow-delay='.2s')
           h3 Databases
-          ul
-            li.col-md-9 SQL
-            li.col-md-9 MongoDB
+          ul(style='list-style-type: none')
+            li
+              i.devicon-mysql-plain-wordmark.colored(style='font-size: 70px; position: relative; left: -20px; top: -20px')
+            li
+              i.devicon-mongodb-plain-wordmark.colored(style='font-size: 70px; position: relative; left: -20px; top: -20px')
+            li
+              i.devicon-microsoftsqlserver-plain-wordmark(style='font-size: 70px; position: relative; left: -20px; top: -20px')
       .col-lg-3.col-md-6.text-center
         .service-box
-          i.fa.fa-4x.fa-gears.wow.bounceIn.text-primary(data-wow-delay='.3s')
+          i.fa.fa-4x.fa-cog.wow.bounceIn.text-primary(data-wow-delay='.3s')
           h3 Other
-          ul
-            li.col-md-9 C/C++
-            li.col-md-9 Git
-            li.col-md-9 Python
+          ul(style='list-style-type: none')
+            li
+              i.devicon-cplusplus-line.colored(style='font-size: 65px; position: relative; left: -20px')
+            li
+              i.devicon-python-plain-wordmark.colored(style='font-size: 70px; position: relative; left: -20px')
+            li
+              i.devicon-git-plain-wordmark.colored(style='font-size: 68px; position: relative; left: -20px')
 // About Section
 section#about.page-section.bg-primary.text-white.mb-0
   .container

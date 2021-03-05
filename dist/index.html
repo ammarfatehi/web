@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css" />
 </head>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -123,11 +124,12 @@
 </section>
 <section id="skills">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Skills</h2>
-                <hr class="primary" />
-            </div>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
         </div>
     </div>
     <div class="container">
@@ -136,10 +138,10 @@
                 <div class="service-box">
                     <i class="fa fa-4x fa-laptop wow bounceIn text-primary"></i>
                     <h3>Front-End</h3>
-                    <ul>
-                        <li class="col-md-9">JavaScript</li>
-                        <li class="col-md-9">CSS</li>
-                        <li class="col-md-9">HTML</li>
+                    <ul style="list-style-type: none">
+                        <li><i class="devicon-javascript-plain colored" style="font-size: 50px; position: relative; left: -25px"></i></li>
+                        <li><i class="devicon-css3-plain-wordmark colored" style="font-size: 55px; position: relative; left: -25px"></i></li>
+                        <li><i class="devicon-html5-plain-wordmark colored" style="font-size: 55px; position: relative; left: -25px"></i></li>
                     </ul>
                 </div>
             </div>
@@ -147,10 +149,10 @@
                 <div class="service-box">
                     <i class="fa fa-4x fa-server wow bounceIn text-primary" data-wow-delay=".1s"></i>
                     <h3>Back-End</h3>
-                    <ul>
-                        <li class="col-md-9">Flask</li>
-                        <li class="col-md-9">Node.js</li>
-                        <li class="col-md-9">AWS</li>
+                    <ul style="list-style-type: none">
+                        <li><i class="devicon-flask-plain-wordmark colored" style="font-size: 70px; position: relative; left: -25px"></i></li>
+                        <li><i class="devicon-nodejs-plain-wordmark colored" style="font-size: 70px; position: relative; left: -25px; top: -20px"></i></li>
+                        <li><i class="devicon-amazonwebservices-plain-wordmark colored" style="font-size: 70px; position: relative; left: -25px; top: -40px"></i></li>
                     </ul>
                 </div>
             </div>
@@ -158,20 +160,21 @@
                 <div class="service-box">
                     <i class="fa fa-4x fa-database wow bounceIn text-primary" data-wow-delay=".2s"></i>
                     <h3>Databases</h3>
-                    <ul>
-                        <li class="col-md-9">SQL</li>
-                        <li class="col-md-9">MongoDB</li>
+                    <ul style="list-style-type: none">
+                        <li><i class="devicon-mysql-plain-wordmark colored" style="font-size: 70px; position: relative; left: -20px; top: -20px"></i></li>
+                        <li><i class="devicon-mongodb-plain-wordmark colored" style="font-size: 70px; position: relative; left: -20px; top: -20px"></i></li>
+                        <li><i class="devicon-microsoftsqlserver-plain-wordmark" style="font-size: 70px; position: relative; left: -20px; top: -20px"></i></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-gears wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <i class="fa fa-4x fa-cog wow bounceIn text-primary" data-wow-delay=".3s"></i>
                     <h3>Other</h3>
-                    <ul>
-                        <li class="col-md-9">C/C++</li>
-                        <li class="col-md-9">Git</li>
-                        <li class="col-md-9">Python</li>
+                    <ul style="list-style-type: none">
+                        <li><i class="devicon-cplusplus-line colored" style="font-size: 65px; position: relative; left: -20px"></i></li>
+                        <li><i class="devicon-python-plain-wordmark colored" style="font-size: 70px; position: relative; left: -20px"></i></li>
+                        <li><i class="devicon-git-plain-wordmark colored" style="font-size: 68px; position: relative; left: -20px"></i></li>
                     </ul>
                 </div>
             </div>
